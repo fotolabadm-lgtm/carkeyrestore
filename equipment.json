@@ -1,0 +1,34 @@
+{
+  "equipment": [
+    {
+      "name": "Xhorse Condor",
+      "model": "XC-002 Pro",
+      "description": "Прецизионная резка ключей",
+      "image": ""
+    },
+    {
+      "name": "Xhorse Dolphin",
+      "model": "II XP-005L",
+      "description": "Лазерная резка",
+      "image": ""
+    },
+    {
+      "name": "Xhorse Key Tool",
+      "model": "Max Pro",
+      "description": "Программирование иммобилайзеров",
+      "image": ""
+    },
+    {
+      "name": "Multiprog",
+      "model": "",
+      "description": "Ремонт блоков ECU",
+      "image": ""
+    },
+    {
+      "name": "Autel",
+      "model": "IM608 Pro2",
+      "description": "Профессиональная диагностика",
+      "image": ""
+    }
+  ]
+}

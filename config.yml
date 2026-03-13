@@ -1,0 +1,76 @@
+# Decap CMS config для CarKey reStore
+# Замени [владелец/репозиторий] на свой GitHub-репо (например: username/carkeyrestore)
+backend:
+  name: github
+  repo: owner/repository
+  branch: main
+  base_url: https://auth.decapcms.org
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+locale: "ru"
+
+collections:
+  - name: "hero"
+    label: "Главный экран"
+    files:
+      - name: "hero"
+        label: "Заголовок"
+        file: "data/hero.json"
+        fields:
+          - { label: "Заголовок H1", name: "title", widget: "string", default: "Восстановим доступ к любому автомобилю" }
+          - { label: "Подзаголовок", name: "subtitle", widget: "string", default: "Ремонт автоэлектрики, изготовление ключей, перепрошивка блоков управления" }
+          - { label: "Текст кнопки", name: "button_text", widget: "string", default: "Заказать звонок" }
+
+  - name: "company"
+    label: "Компания"
+    files:
+      - name: "info"
+        label: "Контакты"
+        file: "data/company.json"
+        fields:
+          - { label: "Телефон", name: "phone", widget: "string", default: "+7 (999) 123-45-67" }
+          - { label: "Адрес", name: "address", widget: "string", default: "г. Москва, ул. Автомобильная, д. 10" }
+          - { label: "Режим работы", name: "hours", widget: "string", default: "9:00–21:00" }
+          - { label: "Email", name: "email", widget: "string", default: "info@carkeyrestore.ru" }
+          - label: "Социальные сети"
+            name: "social"
+            widget: "list"
+            fields:
+              - { label: "Название", name: "name", widget: "string" }
+              - { label: "Ссылка", name: "url", widget: "string" }
+              - { label: "Иконка (fa-* класс)", name: "icon", widget: "string", hint: "fa-brands fa-telegram" }
+
+  - name: "services"
+    label: "Услуги"
+    files:
+      - name: "services"
+        label: "Список услуг"
+        file: "data/services.json"
+        fields:
+          - label: "Услуги"
+            name: "services"
+            widget: "list"
+            fields:
+              - { label: "Название услуги", name: "name", widget: "string" }
+              - { label: "Цена", name: "price", widget: "string", hint: "например: от 1500 ₽" }
+              - { label: "Описание", name: "description", widget: "string", required: false }
+              - { label: "Иконка (fa-*)", name: "icon", widget: "string", default: "fa-solid fa-key" }
+              - { label: "Фото", name: "image", widget: "image", required: false }
+
+  - name: "equipment"
+    label: "Оборудование"
+    files:
+      - name: "equipment"
+        label: "Список оборудования"
+        file: "data/equipment.json"
+        fields:
+          - label: "Оборудование"
+            name: "equipment"
+            widget: "list"
+            fields:
+              - { label: "Название", name: "name", widget: "string" }
+              - { label: "Модель", name: "model", widget: "string", required: false }
+              - { label: "Описание", name: "description", widget: "text", required: false }
+              - { label: "Фото", name: "image", widget: "image", required: false }

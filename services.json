@@ -1,0 +1,40 @@
+{
+  "services": [
+    {
+      "name": "Изготовление ключей",
+      "price": "от 1500 ₽",
+      "description": "лазерные, dimple-ключи любой сложности",
+      "icon": "fa-solid fa-key"
+    },
+    {
+      "name": "Программирование чип-ключей",
+      "price": "от 2000 ₽",
+      "description": "включая полную утерю",
+      "icon": "fa-solid fa-microchip"
+    },
+    {
+      "name": "Вскрытие авто",
+      "price": "от 2500 ₽",
+      "description": "без повреждений",
+      "icon": "fa-solid fa-car-side"
+    },
+    {
+      "name": "Ремонт блоков управления",
+      "price": "индивидуально",
+      "description": "ЭБУ, диагностика",
+      "icon": "fa-solid fa-brain"
+    },
+    {
+      "name": "Диагностика автоэлектрики",
+      "price": "от 1000 ₽",
+      "description": "компьютерная диагностика",
+      "icon": "fa-solid fa-plug"
+    },
+    {
+      "name": "Привязка б/у блоков",
+      "price": "договорная",
+      "description": "адаптация под авто",
+      "icon": "fa-solid fa-rotate"
+    }
+  ]
+}

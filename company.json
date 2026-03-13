@@ -1,0 +1,11 @@
+{
+  "phone": "+7 (999) 123-45-67",
+  "address": "г. Москва, ул. Автомобильная, д. 10",
+  "hours": "9:00–21:00",
+  "email": "info@carkeyrestore.ru",
+  "social": [
+    { "name": "Telegram", "url": "https://t.me/carkeyrestore", "icon": "fa-brands fa-telegram" },
+    { "name": "Instagram", "url": "https://instagram.com/carkeyrestore", "icon": "fa-brands fa-instagram" },
+    { "name": "ВКонтакте", "url": "https://vk.com/carkeyrestore", "icon": "fa-brands fa-vk" }
+  ]
+}

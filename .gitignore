@@ -1,0 +1,17 @@
+# Зависимости
+node_modules/
+
+# Системные
+.DS_Store
+Thumbs.db
+*.log
+
+# Редакторы
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Локальные настройки (если будут)
+.env
+.env.local
